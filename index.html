@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP Calculator</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #calculator {
+            border: 3px solid grey;
+            background-color: black;
+            height: 800px;
+            width: 600px;
+        }
+        .numDisplay{
+            border: 3px solid white;
+            padding: 16px;
+            font-size: 24px;
+            color: white;
+            margin: 52px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .calcButtons {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+        .operators {
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .inputs {
+            display: flex;
+            flex-direction:column-reverse;
+        }
+        button {
+            border-radius: 50%;
+            color: white;
+            font-size: 86px;
+        }
+        .operatorBtn,
+        .equalBtn{
+            background-color: orange;
+        }
+        .numberBtn,
+        .decimalPnt {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="calculator">
+            <div class="numDisplay">0</div>
+            <div class="calcButtons">
+                <div class="operators">
+                    <button class="operatorBtn">+</button>
+                    <button class="operatorBtn">-</button>
+                    <button class="operatorBtn">/</button>
+                    <button class="operatorBtn">*</button>
+                    <button class="equalBtn">=</button>
+                </div>
+                <div class="inputs">
+                    <div class="bottomSec">
+                        <button class="numberBtn">0</button>
+                        <button class="decimalPnt">.</button>
+                    </div>
+                    <div class="bottomNext">
+                        <button class="numberBtn">1</button>
+                        <button class="numberBtn">2</button>
+                        <button class="numberBtn">3</button>
+                    </div>
+                    <div class="bottomMid">
+                        <button class="numberBtn">4</button>
+                        <button class="numberBtn">5</button>
+                        <button class="numberBtn">6</button>
+                    </div>
+                    <div class="bottomUpper">
+                        <button class="numberBtn">7</button>
+                        <button class="numberBtn">8</button>
+                        <button class="numberBtn">9</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
