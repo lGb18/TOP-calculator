@@ -76,45 +76,53 @@
             display: flex;
             align-items: center;
         }
+        .aC {
+            color: black;
+            background-color: white;
+        }
     </style>
 </head>
 <body>
     <main>
         <section id="calculator">
-            <div class="numDisplay">0</div>
+            <div class="numDisplay" id="digitalDisplay">0</div>
             <div class="calcButtons">
-                
-                <div class="inputs">
+                <div class="inputs" id="allDigits">
                     <div class="bottomSec">
-                        <button class="numberBtn">0</button>
-                        <button class="decimalPnt">.</button>
+                        <button class="numberBtn" value="0">0</button>
+                        <button class="decimalPnt" value=".">.</button>
                         <button class="del">del</button>
                     </div>
                     <div class="bottomNext">
-                        <button class="numberBtn">1</button>
-                        <button class="numberBtn">2</button>
-                        <button class="numberBtn">3</button>
+                        <button class="numberBtn" value="1">1</button>
+                        <button class="numberBtn" value="2">2</button>
+                        <button class="numberBtn" value="3">3</button>
                     </div>
                     <div class="bottomMid">
-                        <button class="numberBtn">4</button>
-                        <button class="numberBtn">5</button>
-                        <button class="numberBtn">6</button>
+                        <button class="numberBtn" value="4">4</button>
+                        <button class="numberBtn" value="5">5</button>
+                        <button class="numberBtn" value="6">6</button>
                     </div>
                     <div class="bottomUpper">
-                        <button class="numberBtn">7</button>
-                        <button class="numberBtn">8</button>
-                        <button class="numberBtn">9</button>
+                        <button class="numberBtn" value="7">7</button>
+                        <button class="numberBtn" value="8">8</button>
+                        <button class="numberBtn" value="9">9</button>
+                    </div>
+                    <div class="otherOptions">
+                        <button class="aC">C</button>
                     </div>
                 </div>
-                <div class="operators">
-                    <button class="operatorBtn">+</button>
-                    <button class="operatorBtn">-</button>
-                    <button class="operatorBtn">/</button>
-                    <button class="operatorBtn">*</button>
+                
+                <div class="operators" id="allOps">
+                    <button class="operatorBtn" value="+">+</button>
+                    <button class="operatorBtn" value="-">-</button>
+                    <button class="operatorBtn" value="/">/</button>
+                    <button class="operatorBtn" value="*">*</button>
                     <button class="equalBtn">=</button>
                 </div>
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
