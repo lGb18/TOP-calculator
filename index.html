@@ -18,21 +18,23 @@
             background-color: black;
             height: 800px;
             width: 600px;
+            border-radius: 5%;
         }
         .numDisplay{
             border: 3px solid white;
             padding: 16px;
-            font-size: 24px;
+            font-size: 48px;
             color: white;
-            margin: 52px;
+            margin: 26px;
             display: flex;
             justify-content: flex-end;
         }
         .calcButtons {
             display: flex;
             justify-content: center;
+            flex-direction: row;
             padding: 16px;
-            margin:52px;
+            margin: 12px 48px 48px 48px;
             
 
         }
@@ -48,19 +50,31 @@
         button {
             border-radius: 50%;
             color: white;
-            font-size: 72px;
+            font-size: 64px;
             padding: 20px;
             text-align: center;
             border: none;
             margin: 4px 2px;
+            flex-grow: 1;
         }
         .operatorBtn,
         .equalBtn{
             background-color: orange;
         }
         .numberBtn,
-        .decimalPnt {
+        .decimalPnt,
+        .del {
             background-color: grey;
+        }
+        .del,
+        .decimalPnt {
+            font-size: 24px;
+            min-width: 76px;
+            min-height: 113px;
+        }
+        .bottomSec {
+            display: flex;
+            align-items: center;
         }
     </style>
 </head>
@@ -74,6 +88,7 @@
                     <div class="bottomSec">
                         <button class="numberBtn">0</button>
                         <button class="decimalPnt">.</button>
+                        <button class="del">del</button>
                     </div>
                     <div class="bottomNext">
                         <button class="numberBtn">1</button>
