@@ -30,8 +30,11 @@
         }
         .calcButtons {
             display: flex;
-            flex-direction: row-reverse;
             justify-content: center;
+            padding: 16px;
+            margin:52px;
+            
+
         }
         .operators {
             display: flex;
@@ -45,7 +48,11 @@
         button {
             border-radius: 50%;
             color: white;
-            font-size: 86px;
+            font-size: 72px;
+            padding: 20px;
+            text-align: center;
+            border: none;
+            margin: 4px 2px;
         }
         .operatorBtn,
         .equalBtn{
@@ -62,13 +69,7 @@
         <section id="calculator">
             <div class="numDisplay">0</div>
             <div class="calcButtons">
-                <div class="operators">
-                    <button class="operatorBtn">+</button>
-                    <button class="operatorBtn">-</button>
-                    <button class="operatorBtn">/</button>
-                    <button class="operatorBtn">*</button>
-                    <button class="equalBtn">=</button>
-                </div>
+                
                 <div class="inputs">
                     <div class="bottomSec">
                         <button class="numberBtn">0</button>
@@ -89,6 +90,13 @@
                         <button class="numberBtn">8</button>
                         <button class="numberBtn">9</button>
                     </div>
+                </div>
+                <div class="operators">
+                    <button class="operatorBtn">+</button>
+                    <button class="operatorBtn">-</button>
+                    <button class="operatorBtn">/</button>
+                    <button class="operatorBtn">*</button>
+                    <button class="equalBtn">=</button>
                 </div>
             </div>
         </section>
